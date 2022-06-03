@@ -1,14 +1,14 @@
 pipeline {
   environment {
-    registry = "gustavoapolinario/docker-test"
-    registryCredential = 'dockerhub'
+    registry = "vijayjalgi/docker-test"
+    registryCredential = 'docker_id'
     dockerImage = ''
   }
   agent any
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/gustavoapolinario/microservices-node-example-todo-frontend.git'
+        git ''
       }
     }
     stage('Building image') {
